@@ -4,37 +4,46 @@
         <title>Viper</title>
         <meta charset="utf-8">
 
-        <style type="text/css">
-            .Titulo{
-                color: #000000;
-                font-size: 40px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
-            .navegacao{
-                color: rgb(57, 57, 57);
-                font-size: small;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css"
+        href="external.css">
+        <link rel="stylesheet" href="./searchBar.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
 
     <body id="principal">
     <h1>
-        <p class="Titulo">
+        <header>
+        <p id="Titulo">
            VIPER
         </p>
-        <div class="navegacao">
-            <li>Sale</li>
-            <li>New In</li>
-            <li>Tendências</li>
-            <li>Marcas</li>
-            <li>Bolsas</li>
-            <li>Roupas</li>
-            <li>Sapatos</li>
-            <li>Acessórios</li>
-            <li>Joias</li>
-            <li>Sign In</li>
-            <li>Search</li>
+        <form action="#" method="post">
+            <div id="button">
+            <input type="text" name="search" id="search" placeholder="Search" required>
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            
+        </form>
+        </header>
+        
+        <div id="navegacao">
+            
+            <a href="index.html">Sale</a> 
+            <a href="index.html">New</a> 
+            <a href="index.html">Tendências</a> 
+            <a href="index.html">Marcas</a> 
+            <a href="index.html">Bolsas</a> 
+            <a href="index.html">Roupas</a> 
+            <a href="index.html">Sapatos</a> 
+            <a href="index.html">Acessórios</a> 
+            <a href="index.html">Joias</a> 
+            <a href="index.html">Sign In</a>
+            <a href="index.html">Search</a> 
+            
+        </div>
+        
+        
+        <div id="conteudo">
+            
         </div>
     </h1>
     </body>
