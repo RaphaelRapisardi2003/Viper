@@ -16,7 +16,7 @@
   Fictional Shopping Site for Women 
 
 # 📖 Descrição do Projeto
-  aaaaaaaaaaaaaaaaa
+  aaaaaaaaaaaaaaaaaa
 
 
 # ✔️ Status do Projeto
