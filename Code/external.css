@@ -10,6 +10,21 @@
 hr {
     margin: 40px 0;
   }
+  #search{
+    width: 300px;
+    margin: 60px auto;
+    }
+    
+    input[type=search]{
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    padding: 0px 20px 0px 40px;
+    border-radius: 5px;
+    outline: none;
+    border: solid rgb(211, 210, 210) 1px;
+    background: url('Search.png') 7px center no-repeat;
+    }
 #navegacao{
     color: rgb(95, 97, 95);
     font-weight: lighter;
@@ -19,10 +34,7 @@ hr {
     word-spacing: 20px;
     
 }
-#button{
-    text-align: right;
-    
-}
+
 header{
     display: flex;
     align-items: center;
