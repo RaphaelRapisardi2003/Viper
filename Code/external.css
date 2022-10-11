@@ -5,13 +5,14 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding-left: 45%;
+    margin-top: 0%;
     }
 
 hr {
     margin: 40px 0;
   }
   .hotbar{
-    margin-bottom: 10%;
+    margin-top: 0%;
   }
 .navegacao{
     color: rgb(95, 97, 95);
@@ -21,6 +22,8 @@ hr {
     word-spacing: 20px;
     margin-left: 15%;
     display: inline-block;
+    vertical-align: 30%;
+    
 }
 
 header{
@@ -33,12 +36,13 @@ a{
     color: inherit;
 }
 .searchBar{
-    margin-left: 10%;
+    margin-left: 15%;
     width: 250px;
     height: 50px;
     border: 1px solid #dadada;
     border-radius: 5px;
     display: inline-block;
+    vertical-align: top;
     
 }
 .elementsContainer{
@@ -57,5 +61,15 @@ a{
     outline:none;
     
 }
-
+.banner{
+    margin-top: 3%;
+}
+.bannerE{
+    margin-left: 15%;
+    display: inline-block;
+}
+.bannerD{
+    display: inline-block;
+    margin-left: 5%;
+}
   
