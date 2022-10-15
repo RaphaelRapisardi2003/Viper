@@ -6,21 +6,23 @@
     text-align: center;
     padding-left: 45%;
     margin-top: 0%;
+    margin-bottom: 0%;
+    
     }
 
 hr {
     margin: 40px 0;
   }
   .hotbar{
-    margin-top: 0%;
+    margin-top: 1%;
   }
 .navegacao{
     color: rgb(95, 97, 95);
     font-weight: lighter;
     font-size:medium;
     font-family:sans-serif;
-    word-spacing: 20px;
-    margin-left: 15%;
+    word-spacing: 27px;
+    margin-left: 13%;
     display: inline-block;
     vertical-align: 30%;
     
