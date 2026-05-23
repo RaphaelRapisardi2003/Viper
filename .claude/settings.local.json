@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:source.unsplash.com)",
+      "WebFetch(domain:unsplash.com)"
+    ]
+  }
+}
