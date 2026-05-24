@@ -1,128 +1,171 @@
-<div align="center">
-  <img src="Pics/Logo/viper-logo-light.svg" alt="Viper Milano" width="320"/>
-</div>
+<p align="center">
+  <img src="Pics/Logo/viper-readme-banner.svg" alt="VIPER MILANO" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-1E201E?style=flat-square&labelColor=1E201E&color=d4a96a" alt="status">
+  &nbsp;
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="html5">
+  &nbsp;
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="css3">
+  &nbsp;
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="js">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Responsive-Design-1E201E?style=flat-square" alt="responsive">
+</p>
+
+<p align="center">
+  E-commerce de moda feminina de alto padrão, inspirado nas grandes <em>maisons</em> italianas.<br>
+  Projeto front-end com identidade visual própria, lookbook editorial e experiência de usuário premium.
+</p>
+
+<br>
 
 ---
 
-<div align="center">
-  <img src="Pics/screenshot-hero.png" alt="Viper Milano — Preview" width="100%"/>
-</div>
+## ✦ Preview
+
+<p align="center">
+  <img src="Pics/screenshot-hero.png" alt="VIPER MILANO — Hero" width="92%">
+</p>
+
+<br>
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="Pics/ss-quemsomos.png" alt="Quem Somos — Viper Milano" width="100%">
+      <br><sub><b>Quem Somos</b> &nbsp;·&nbsp; Split layout escuro · Brera, Milão</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="Pics/ss-manifesto.png" alt="Manifesto — Brand Story" width="100%">
+      <br><sub><b>Manifesto</b> &nbsp;·&nbsp; Brand story com watermark tipográfico</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="Pics/ss-lookbook.png" alt="Lookbook SS26" width="100%">
+      <br><sub><b>Lookbook SS26</b> &nbsp;·&nbsp; Grid editorial assimétrico</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="Pics/ss-perfumes.png" alt="Il Profumo — Viper Milano" width="100%">
+      <br><sub><b>Il Profumo</b> &nbsp;·&nbsp; Notas olfativas · <em>O cheiro que te define.</em></sub>
+    </td>
+  </tr>
+</table>
+
+<br>
 
 ---
 
-## Índice
+## ✦ Funcionalidades
 
-* [Introdução](#-introdução)
-* [Descrição do Projeto](#-descrição-do-projeto)
-* [Status do Projeto](#-status-do-projeto)
-* [Telas & Funcionalidades](#-telas--funcionalidades)
-* [Técnicas e Tecnologias](#-técnicas-e-tecnologias)
-* [Como Acessar](#-como-acessar)
-* [Contato](#-contato)
+<table>
+  <tr>
+    <td>🎭 <b>Manifesto</b></td>
+    <td>Brand story com watermark "VIPER" em fundo creme e copy editorial italiana</td>
+  </tr>
+  <tr>
+    <td>🖼️ <b>Hero Carousel</b></td>
+    <td>3 slides com autoplay, setas e dots — foto editorial local como slide 1</td>
+  </tr>
+  <tr>
+    <td>👤 <b>Quem Somos</b></td>
+    <td>Split layout escuro com história dos ateliês no bairro Brera, Milão</td>
+  </tr>
+  <tr>
+    <td>📸 <b>Lookbook SS26</b></td>
+    <td>Grid assimétrico com fotos editoriais e legendas em italiano</td>
+  </tr>
+  <tr>
+    <td>🌹 <b>Perfumes</b></td>
+    <td>Seção Il Profumo com notas olfativas e layout de cena escura</td>
+  </tr>
+  <tr>
+    <td>🛍️ <b>Produtos</b></td>
+    <td>Novidades · Mais Vendidos · Tendências (tabs) · Sapatos · Bolsas · Sale</td>
+  </tr>
+  <tr>
+    <td>🔍 <b>UX Premium</b></td>
+    <td>Cursor personalizado · Mega menu · Drawer mobile · Scroll reveal · Quick-add</td>
+  </tr>
+  <tr>
+    <td>📱 <b>Responsivo</b></td>
+    <td>Desktop (1440px) · Tablet (1024px) · Mobile (768px / 520px)</td>
+  </tr>
+</table>
 
----
-
-## 📘 Introdução
-
-**Viper Milano** é um site de e-commerce de moda feminina de alto padrão, com identidade visual inspirada nas grandes maisons italianas. Desenvolvido como projeto de estudo de front-end com foco em HTML semântico, CSS moderno e experiência de usuário premium.
-
----
-
-## 📖 Descrição do Projeto
-
-A **Viper** é uma grife feminina fictícia fundada em Milão, que comercializa roupas, acessórios, bolsas, sapatos, joias e fragrâncias. O projeto simula a interface completa de um e-commerce de luxo — desde o hero cinematográfico até o lookbook editorial e a seção de perfumes.
-
-> *"A elegância não é uma questão de ser notada. É uma questão de ser lembrada."*
-> — Giorgio Armani
-
----
-
-## ✔️ Status do Projeto
-
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=1E201E&style=for-the-badge"/>
-
----
-
-## 🖥️ Telas & Funcionalidades
-
-### Hero Carousel
-- 3 slides com transição automática e controles manuais (setas + dots)
-- Hero slide 1 com foto editorial da marca + copy italiana *"Nascida em Milão. Feita para você."*
-
-### Identidade de Marca
-- Logo **VIPER MILANO** no header com subtítulo tipográfico elegante
-- Paleta de cores da grife: `#1E201E` (charcoal escuro) + `#FAF9F6` (creme off-white)
-- Cursor personalizado com anel de hover em todos os elementos interativos
-
-### Seções Editoriais
-- 🎭 **Manifesto** — brand story com watermark "VIPER" em fundo creme + copy da grife
-- 👤 **Quem Somos** — split layout escuro com história dos ateliês no bairro Brera, Milão
-- 📸 **Lookbook SS26** — grid assimétrico editorial com legendas em italiano
-- 🌹 **Perfumes — Il Profumo** — seção de fragrâncias com notas olfativas detalhadas
-
-### Produtos
-- 🆕 **Novidades** — 8 produtos com badges, cores e "Adicionar à Sacola"
-- 🔥 **Mais Vendidos** — grid de 5 colunas com destaques
-- 🎨 **Tendências por Estilo** — tabs interativas: Casual / Festa / Trabalho / Praia
-- 👠 **Sapatos** + 👜 **Bolsas** — seções dedicadas com fundo alternado
-
-### UX Premium
-- 🔍 Barra de busca expansível no header
-- 📱 Menu drawer mobile com overlay
-- 💰 Mega menu em desktop com 3 colunas
-- ⭐ Avaliações de clientes
-- 📷 Galeria estilo Instagram feed
-- 📧 Newsletter "Clube Viper" em fundo escuro com dourado
-- 🎁 Barra de benefícios (frete, troca, segurança, atendimento)
-- 🏷️ Marcas em destaque: Totême, Jacquemus, COS, Ganni, A.P.C., Staud
-- 📣 Announcement bar com ticker animado
-
-### Layout & Design
-- 📐 Layout responsivo: desktop (1440px), tablet (1024px), mobile (768px / 520px)
-- ✨ Scroll reveal (fade-up) em todos os elementos
-- 🖱️ Cursor dot + ring customizado
-- 🛒 Quick-add hover button nos cards de produto
-- ❤️ Botão de wishlist com toggle de estado
+<br>
 
 ---
 
-## 🤖 Técnicas e Tecnologias
+## ✦ Tecnologias
 
-| Tecnologia | Uso |
-|---|---|
-| `HTML5` | Estrutura semântica com `header`, `nav`, `section`, `article`, `footer` + acessibilidade (`aria-label`, `lang`, `alt`) |
-| `CSS3` | Custom Properties, Grid, Flexbox, `@keyframes`, `aspect-ratio`, `clamp()`, `object-fit`, media queries |
-| `JavaScript` (Vanilla) | Hero slider, sticky header, mega menu, search toggle, drawer mobile, style tabs, scroll reveal, cursor personalizado |
-| `Google Fonts` | Cormorant Garamond (serif editorial) + Jost (sans-serif clean) |
-| `Material Symbols` | Ícones do Google (search, bag, favorite, person, etc.) |
-| `SVG` | Logo vetorial VIPER MILANO em todas as variações (stacked, wordmark, monogram, combined) |
+<p>
+  <img src="https://img.shields.io/badge/HTML5-semântico-E34F26?style=flat-square&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-Grid_%2F_Flexbox_%2F_Custom_Properties-1572B6?style=flat-square&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-Vanilla_ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/Google_Fonts-Cormorant_%2B_Jost-4285F4?style=flat-square&logo=google&logoColor=white">
+  <img src="https://img.shields.io/badge/SVG-Logo_Vetorial-FFB13B?style=flat-square">
+</p>
+
+| Camada | Detalhe |
+|--------|---------|
+| **HTML5** | Estrutura semântica · `header` `nav` `section` `article` `footer` · Atributos de acessibilidade |
+| **CSS3** | Custom properties (`--brand-dark` `--brand-cream` `--brand-gold`) · `clamp()` · `aspect-ratio` · `@keyframes` · media queries |
+| **JavaScript** | Hero slider · Sticky header · Mega menu · Search toggle · Style tabs · Scroll reveal · Cursor custom |
+| **Tipografia** | Cormorant Garamond (editorial serif) + Jost (clean sans) + Material Symbols |
+
+<br>
 
 ---
 
-## 📁 Como Acessar
+## ✦ Como Executar
 
 ```bash
 # Clone o repositório
 git clone https://github.com/RaphaelRapisardi2003/Viper.git
 
-# Abra o arquivo diretamente no browser
-# Navegue até: Code/index.html
+# Abra o arquivo diretamente — sem build necessário
+Code/index.html
 ```
 
-Ou acesse online clicando [aqui](https://github.com/RaphaelRapisardi2003/Viper).
+> Projeto estático puro. Nenhuma dependência, nenhuma instalação. Basta abrir no browser.
+
+<br>
 
 ---
 
-## 📞 Contato
+## ✦ Estrutura
 
-<div id="badges">
+```
+Viper/
+├── Code/
+│   ├── index.html        # Página principal
+│   └── external.css      # Todos os estilos
+└── Pics/
+    ├── Banner.jpg         # Hero local
+    ├── model1–6.jpg       # Lookbook editorial
+    ├── quemsomos1.jpg     # Seção Quem Somos
+    ├── perfume1.jpg       # Seção Il Profumo
+    └── Logo/
+        └── viper-logo-light.svg
+```
+
+<br>
+
+---
+
+<p align="center">
   <a href="https://www.linkedin.com/in/raphael-rapisardi-a55790235/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+    <img src="https://img.shields.io/badge/LinkedIn-Raphael_Rapisardi-0A66C2?style=flat-square&logo=linkedin&logoColor=white">
   </a>
-</div>
+  &nbsp;
+  <a href="https://github.com/RaphaelRapisardi2003/Viper">
+    <img src="https://img.shields.io/badge/GitHub-Viper_Milano-1E201E?style=flat-square&logo=github&logoColor=white">
+  </a>
+</p>
 
----
-
-<div align="center">
-  <sub>© 2026 Viper Milano S.r.l. — Todos os direitos reservados.</sub>
-</div>
+<p align="center">
+  <sub>© 2026 Viper Milano S.r.l. &nbsp;·&nbsp; Todos os direitos reservados.</sub>
+</p>
