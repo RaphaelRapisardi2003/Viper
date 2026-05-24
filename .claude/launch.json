@@ -2,6 +2,12 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "viper-nextjs",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3001
+    },
+    {
       "name": "viper-site",
       "runtimeExecutable": "npx",
       "runtimeArgs": ["serve", "Code", "-p", "5500", "--no-clipboard"],
