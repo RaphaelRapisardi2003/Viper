@@ -1,8 +1,10 @@
 'use client'
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
+import { useCart } from '@/src/presentation/cart/CartProvider'
 
 export default function Header() {
+  const { cart } = useCart()
   const headerRef  = useRef<HTMLElement>(null)
   const searchRef  = useRef<HTMLDivElement>(null)
   const inputRef   = useRef<HTMLInputElement>(null)
@@ -62,9 +64,9 @@ export default function Header() {
           <Link href="#" className="icon-btn" aria-label="Minha conta">
             <span className="material-symbols-outlined">person</span>
           </Link>
-          <Link href="#" className="icon-btn cart-icon" aria-label="Sacola">
+          <Link href="/carrinho" className="icon-btn cart-icon" aria-label="Sacola">
             <span className="material-symbols-outlined">shopping_bag</span>
-            <span className="cart-badge">2</span>
+            {cart.totalItems > 0 && <span className="cart-badge">{cart.totalItems}</span>}
           </Link>
         </div>
       </div>

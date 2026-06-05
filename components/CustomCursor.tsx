@@ -13,7 +13,7 @@ export default function CustomCursor() {
     document.addEventListener('mousemove', onMove)
 
     let raf: number
-    function tick() {
+    const tick = () => {
       dot.style.left = mx + 'px'
       dot.style.top  = my + 'px'
       rx += (mx - rx) * 0.14

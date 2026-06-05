@@ -9,18 +9,20 @@ interface Props {
   columns?: 4 | 5
   altBg?: boolean
   isSale?: boolean
+  collection?: string
 }
 
-export default function ProductsSection({ title, id, products, columns = 4, altBg, isSale }: Props) {
+export default function ProductsSection({ title, id, products, columns = 4, altBg, isSale, collection }: Props) {
   const gridClass = columns === 5 ? 'products-grid products-grid-5' : 'products-grid'
   const delays = [0, 0.06, 0.12, 0.18, 0.24, 0.30]
+  const seeAllHref = collection ? `/loja/${collection}` : '#'
 
   return (
     <section className={`products-section${altBg ? ' alt-bg' : ''}${isSale ? ' sale-section' : ''}`} id={id}>
       <div className="container">
         <div className="section-title">
           <h2 className={isSale ? 'sale-title' : ''}>{title}</h2>
-          <Link href="#" className={`link-all${isSale ? ' link-all-sale' : ''}`}>
+          <Link href={seeAllHref} className={`link-all${isSale ? ' link-all-sale' : ''}`}>
             Ver tudo <span className="material-symbols-outlined">arrow_forward</span>
           </Link>
         </div>

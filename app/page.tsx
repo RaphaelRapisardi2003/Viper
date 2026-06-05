@@ -31,18 +31,18 @@ export default function Home() {
       <HeroCarousel />
       <Manifesto />
       <ShopCategory />
-      <ProductsSection title="Novidades"    id="novidades"   products={novidadesProducts} />
+      <ProductsSection title="Novidades"    id="novidades"   products={novidadesProducts} collection="novidades" />
       <EditorialHero />
       <AboutSection />
-      <ProductsSection title="Mais Vendidos" products={maisVendidosProducts} columns={5} />
+      <ProductsSection title="Mais Vendidos" products={maisVendidosProducts} columns={5} collection="mais-vendidos" />
       <LookbookGrid />
       <DoubleEditorial />
       <StyleTabs />
-      <ProductsSection title="Sapatos" id="sapatos" products={sapatosProducts} altBg />
-      <ProductsSection title="Bolsas"  id="bolsas"  products={bolsasProducts} />
+      <ProductsSection title="Sapatos" id="sapatos" products={sapatosProducts} altBg collection="sapatos" />
+      <ProductsSection title="Bolsas"  id="bolsas"  products={bolsasProducts} collection="bolsas" />
       <PerfumeSection />
       <QuoteStrip />
-      <ProductsSection title="Sale — Até 50% Off" id="sale" products={saleProducts} isSale />
+      <ProductsSection title="Sale — Até 50% Off" id="sale" products={saleProducts} isSale collection="sale" />
       <ReviewsSection />
       <InstagramFeed />
       <BrandsSection />

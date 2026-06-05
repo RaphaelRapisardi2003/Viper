@@ -20,7 +20,7 @@ export default function StyleTabs() {
       <div className="container">
         <div className="section-title">
           <h2>Tendências por Estilo</h2>
-          <Link href="#" className="link-all">Ver tudo <span className="material-symbols-outlined">arrow_forward</span></Link>
+          <Link href={`/loja/${active}`} className="link-all">Ver tudo <span className="material-symbols-outlined">arrow_forward</span></Link>
         </div>
         <div className="style-tabs">
           {tabs.map(t => (

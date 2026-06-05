@@ -5,13 +5,13 @@
 <p align="center">
   <img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-1E201E?style=flat-square&labelColor=1E201E&color=d4a96a" alt="status">
   &nbsp;
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="html5">
+  <img src="https://img.shields.io/badge/Next.js-15-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="nextjs">
   &nbsp;
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="css3">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black" alt="react">
   &nbsp;
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="js">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="typescript">
   &nbsp;
-  <img src="https://img.shields.io/badge/Responsive-Design-1E201E?style=flat-square" alt="responsive">
+  <img src="https://img.shields.io/badge/Hexagonal-DDD-1E201E?style=flat-square" alt="architecture">
 </p>
 
 <p align="center">
@@ -111,9 +111,11 @@
 
 | Camada | Detalhe |
 |--------|---------|
-| **HTML5** | Estrutura semântica · `header` `nav` `section` `article` `footer` · Atributos de acessibilidade |
-| **CSS3** | Custom properties (`--brand-dark` `--brand-cream` `--brand-gold`) · `clamp()` · `aspect-ratio` · `@keyframes` · media queries |
-| **JavaScript** | Hero slider · Sticky header · Mega menu · Search toggle · Style tabs · Scroll reveal · Cursor custom |
+| **Next.js 15 + React 19** | App Router · Server Components nas páginas de catálogo · Client Components nos fluxos interativos |
+| **TypeScript** | `strict` · Value Objects, Entities e DTOs tipados ponta a ponta |
+| **Arquitetura Hexagonal + DDD** | `domain` (modelo rico + ports) → `application` (use cases) → `infrastructure` (adapters + container) → `presentation` |
+| **Design Patterns** | Repository · Factory · Data Mapper / Presenter · Value Object · Use Case · Singleton (composition root) |
+| **CSS3** | Custom properties (`--brand-dark` `--brand-cream` `--brand-gold`) · `aspect-ratio` · media queries |
 | **Tipografia** | Cormorant Garamond (editorial serif) + Jost (clean sans) + Material Symbols |
 
 <br>
@@ -125,12 +127,14 @@
 ```bash
 # Clone o repositório
 git clone https://github.com/RaphaelRapisardi2003/Viper.git
+cd Viper
 
-# Abra o arquivo diretamente — sem build necessário
-Code/index.html
+# Instale as dependências e suba o ambiente de desenvolvimento
+npm install
+npm run dev   # http://localhost:3000
 ```
 
-> Projeto estático puro. Nenhuma dependência, nenhuma instalação. Basta abrir no browser.
+> Aplicação Next.js. Rotas: `/` (home), `/loja/[categoria]`, `/produto/[slug]` e `/carrinho`.
 
 <br>
 
@@ -140,17 +144,42 @@ Code/index.html
 
 ```
 Viper/
-├── Code/
-│   ├── index.html        # Página principal
-│   └── external.css      # Todos os estilos
-└── Pics/
-    ├── Banner.jpg         # Hero local
-    ├── model1–6.jpg       # Lookbook editorial
-    ├── quemsomos1.jpg     # Seção Quem Somos
-    ├── perfume1.jpg       # Seção Il Profumo
-    └── Logo/
-        └── viper-logo-light.svg
+├── app/                          # Next.js App Router (rotas)
+│   ├── page.tsx                  # Home
+│   ├── loja/[categoria]/         # Listagem por coleção
+│   ├── produto/[slug]/           # Detalhe do produto (PDP)
+│   └── carrinho/                 # Sacola
+├── components/                   # Componentes de UI
+├── src/                          # Núcleo hexagonal + DDD
+│   ├── domain/                   # Entities, Value Objects e Ports
+│   │   ├── catalog/              #   Product · Category · ProductRepository
+│   │   ├── cart/                 #   Cart · CartItem · CartRepository
+│   │   └── shared/               #   Money (Value Object)
+│   ├── application/              # Use Cases + DTOs + Presenters (Data Mapper)
+│   │   ├── catalog/
+│   │   └── cart/
+│   ├── infrastructure/           # Adapters dos ports + composition root
+│   │   ├── catalog/              #   Seed · ProductFactory · InMemoryProductRepository
+│   │   ├── cart/                 #   LocalStorageCartRepository
+│   │   └── container.ts          #   DI container (Singleton)
+│   └── presentation/             # Adapters de entrada (CartProvider / useCart)
+└── Pics/                         # Assets locais e logos
 ```
+
+### Fluxo de dependências (Ports & Adapters)
+
+```
+ UI (app/ · components/)
+        │  usa
+        ▼
+ application/  ── use cases ──▶ depende de ──▶ domain/ (ports: ProductRepository, CartRepository)
+        ▲                                            ▲
+        │ injeta                                     │ implementa
+ infrastructure/container.ts ──────────────▶ infrastructure/*Repository  (adapters)
+```
+
+> A regra de dependência aponta sempre para dentro: domínio não conhece infraestrutura.
+> Trocar `InMemoryProductRepository` por uma versão HTTP/Prisma não exige tocar em domínio, use cases ou UI.
 
 <br>
 

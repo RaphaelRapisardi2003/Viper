@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import MobileDrawer from '@/components/MobileDrawer'
 import Footer from '@/components/Footer'
 import CustomCursor from '@/components/CustomCursor'
+import { CartProvider } from '@/src/presentation/cart/CartProvider'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -38,12 +39,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <CustomCursor />
-        <AnnouncementBar />
-        <Header />
-        <MobileDrawer />
-        {children}
-        <Footer />
+        <CartProvider>
+          <CustomCursor />
+          <AnnouncementBar />
+          <Header />
+          <MobileDrawer />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   )

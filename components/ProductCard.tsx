@@ -1,19 +1,35 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import type { Product } from '@/lib/data'
+import { useCart } from '@/src/presentation/cart/CartProvider'
 
 export default function ProductCard({ product, delay }: { product: Product; delay?: number }) {
   const [saved, setSaved] = useState(false)
+  const { addItem } = useCart()
+  const href = `/produto/${product.slug}`
+
+  const handleAdd = () => {
+    addItem({
+      productId: product.id,
+      slug: product.slug,
+      name: product.name,
+      brand: product.brand,
+      image: product.image,
+      unitPriceCents: product.unitPriceCents,
+      color: product.colors?.[0]?.name,
+    })
+  }
 
   return (
     <article className="product-card fade-up" style={delay ? { transitionDelay: `${delay}s` } : {}}>
       <div className="product-media">
-        <a href="#">
+        <Link href={href}>
           <Image src={product.image} alt={product.name} fill sizes="(max-width:768px) 50vw, 25vw" style={{ objectFit: 'cover' }} />
-        </a>
+        </Link>
         <div className="product-actions">
-          <button className="quick-add-btn">
+          <button className="quick-add-btn" onClick={handleAdd}>
             <span className="material-symbols-outlined">shopping_bag</span>Adicionar à Sacola
           </button>
         </div>
@@ -38,7 +54,7 @@ export default function ProductCard({ product, delay }: { product: Product; dela
             <p className="p-price">{product.price}</p>
           )}
         </div>
-        <h3 className="p-name">{product.name}</h3>
+        <h3 className="p-name"><Link href={href}>{product.name}</Link></h3>
         {product.colors && (
           <div className="p-colors">
             {product.colors.map(c => (
